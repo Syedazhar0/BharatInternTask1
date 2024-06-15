@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="BharatIntern.css"/>
+    
+</head>
+<body>
+    <div class="box">
+        <h2>User Registration</h2>
+        <form action="/register" method="post">
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" name="username" id="username" required>
+                <label for="username">Username:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="password" id="password" required>
+                <label for="password">Password:</label>
+            </div>
+
+            <div class="forget">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember me</label>
+                <a href="#">Forget Password</a>
+            </div>
+
+            <button type="submit">Register</button>
+
+            <div class="register">
+                <p>Already have an account? <a href="#">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
